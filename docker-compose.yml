@@ -5,7 +5,7 @@ services:
         command: gunicorn bookstore_project.wsgi -b 0.0.0.0:8000
         environment:
             - ENVIRONMENT=development
-            - NEW_SECRET_KEY=0d99a(==!u8)^cmr%k-ixuoomkhy*2(3*5zqm#ymjy)-0-k#o)
+            - SECRET_KEY=0d99a(==!u8)^cmr%k-ixuoomkhy*2(3*5zqm#ymjy)-0-k#o)
             - DEBUG=1
             - STRIPE_TEST_PUBLISHABLE_KEY=pk_test_pAI3LzeiSM04gZ4T14naoaBa00GYTlRYXQ
             - STRIPE_TEST_SECRET_KEY=sk_test_cZDGddBjhjwhx00amUmNz3qU00Eqp96oeV
